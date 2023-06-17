@@ -4,7 +4,7 @@ const client = new KafkaClient({ kafkaHost: 'localhost:9092' });
 
 const consumer = new Consumer(
   client,
-  [{ topic: 'test', partition: 0 }],
+  [{ topic: 'my-topic', partition: 0 }],
   {
     groupId: 'my-consumer',
     autoCommit: true,
