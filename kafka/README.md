@@ -23,7 +23,6 @@ $ docker-compose exec kafka \
     kafka-topics --list \
     --zookeeper zookeeper:2181
 my-topic
-test
 ```
 
 # Test
@@ -32,6 +31,13 @@ $ node dist/producer.js taro 30
 $ node dist/consumer.js
 $ node dist/producer.js jiro 29
 $ node dist/consumer.js
+```
+
+# monitoring
+
+See topic with GUI.
+```
+http://localhost:8080/
 ```
 
 
